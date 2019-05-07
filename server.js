@@ -19,7 +19,7 @@ function cobrarTokenJWT(req, resp, next) {
         var decodificado = jwt.verify(token, SEGREDO);
         next();
     } catch (e) {
-        resp.status(500).send({ message: 'token invalido' })
+        resp.status(500).send({ message: 'Token inválido' })
     }
 }
 app.use(cobrarTokenJWT);
