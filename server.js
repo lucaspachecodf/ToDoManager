@@ -28,8 +28,7 @@ app.get('/', (req, resp) => {
     resp.send('resposta');
 });
 
-app.post('/tasks', (request, response) => {
-    debugger;
+app.post('/tasks', (request, response) => {    
     const body = request.body;
     const task = {
         id: uuid(),

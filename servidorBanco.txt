@@ -1,0 +1,3 @@
+Comando para iniciar o banco de dados:
+
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
